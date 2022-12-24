@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <div>
+                <h2>Zipandas</h2>
+                <p class="hair">Hair Studio</p>
+            </div>
+            <div>
+                <p>02088455354</p>
+            </div>
+        </div>
+        <div class="header-down">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Prices & Services</li>
+                <li>weddings</li>
+                <li>Meet the Team</li>
+                <li>Gallery</li>
+                <li>Testimonials</li>
+                <li>Special offers</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="poster">
+            <div class="poster-text">
+                <h1>PROPFESSIONAL</h1>
+                <h2>HAIR SALON IN</h2>
+                <h2>RUISLIP</h2>
+                <h3>...</h3>
+            </div>
+        </div>
+        <div class="card-box">
+            <div class="card card1">
+                <p>SPECIAL</p>
+                <h4>OFFERS</h4>
+                <small>READ MORE</small>
+            </div>
+
+            <div class="card card2">   /* ye name smj ni aya*/
+                <p>WEDDING</p>
+                <h4>PACKAGES</h4>
+                <small>READ MORE</small>
+            </div>
+
+            <div class="card card3">
+                <p>WHAT WE</p>
+                <h4>OFFERS</h4>
+                <small>READ MORE</small>
+            </div>
+
+        </div>
+
+        <div class="main-text">
+            <div class="main-text-left">
+                <i>Welcome to Zipandas</i>
+                <h3>Quality hairdressing in <br> South Ruislip</h3>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum officiis repellat
+                    quibusdam! Quaerat reiciendis porro iure! Repudiandae, quas repellendus? Eligendi sapiente
+                    laudantium laboriosam optio inventore iure in, adipisci ullam!</small>
+            </div>
+            <div class="main-text-right">
+                <div>
+                    <h3>BOOK AN <br> APPOINTMENT</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati porro, earum consequuntur
+                        distinctio animi provident suscipit placeat, rerum nobis aliquid maxime, nulla recusandae eum
+                        veniam
+                        doloribus quisquam? Quisquam, libero autem!</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+css
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(7, 63, 76);
+    color: white;
+    padding: 10px 10%;
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header .header-top p {
+    font-size: 11px;
+    color: aliceblue;
+}
+
+.hair {
+    margin-left: 45px;
+}
+
+header .header-down ul {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gainsboro;
+    padding-top: 5px;
+}
+
+header .header-down ul li {
+    white-space: nowrap;
+    font-size: 14px;
+    color: aliceblue;
+    border-right: 1px solid gainsboro;
+    padding-right: 20px;
+}
+
+.poster {
+    color: white;
+    background-image: url(https://cdn.pixabay.com/photo/2018/10/11/19/21/models-3740627__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    padding-top: 18vh;
+}
+
+.poster-text {
+    margin-left: 50%;
+}
+
+.card-box {
+    padding: 0 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: -70px;
+}
+
+.card {                      /*ye wali class kahan hai?*/
+    width: 300px;
+    height: 150px;
+    padding-left: 5px;
+    padding-top: 50px;
+}
+
+.card-box .card1 {   /* but actual name is "card card1"*/
+    background-image: url(https://cdn.pixabay.com/photo/2018/10/11/19/18/models-3740609__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-box .card2 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-box .card3 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/11/32/woman-1869208__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-text {
+
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-text>div {    /* text>div matlab text k har div mein?*/
+    flex: 1;            /* what is the use of it?*/
+
+}
+
+.main-text small {
+    color: gray;
+}
+
+.main-text .main-text-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text .main-text-right>div {  /* main-text-right ke div mein? */
+    width: 300px;
+    border: 2px dotted rgb(7, 63, 76);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main-text-right h3 {
+    color: rgb(7, 63, 76);
+}
